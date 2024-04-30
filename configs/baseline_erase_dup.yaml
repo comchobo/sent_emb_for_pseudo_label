@@ -1,0 +1,39 @@
+main_lambda:
+  batch_size: 64
+  comm_size: 50
+  cosine_threshold: 0.60
+  mode: main_lambda
+  erase_dup: true
+  max_length: 64
+  hidden_size: 1024
+  seed_list:
+  - 42
+  - 43
+  - 44
+  shard_num: 0
+mini_lambda:
+  batch_size: 64
+  comm_size: 65
+  cosine_threshold: 0.60
+  mode: mini_lambda
+  sample_size: 32000
+  erase_dup: true
+  max_length: 64
+  hidden_size: 1024
+  seed_list:
+  - 42
+  - 43
+  - 44
+  shard_num: 5
+mini_local:
+  batch_size: 32
+  comm_size: 45
+  cosine_threshold: 0.60
+  mode: mini_local
+  sample_size: 8000
+  erase_dup: true
+  max_length: 64
+  hidden_size: 1024
+  seed_list:
+  - 42
+  shard_num: 20
